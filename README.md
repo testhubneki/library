@@ -26,7 +26,7 @@ To install
 
 
 <p>Use Postman or other tools x-api-key must use in header(api key stored in root config/api.php )</p>
-<p>In Postman or other tools in Headers  key Accept value application/json and  key Contebt-Type value application/json</p>
+<p>In Postman or other tools in Headers  key Accept value application/json and  key Content-Type value application/json</p>
 <p>When you logi in use token for authorization in Postman->Authorisation->Type choose Bearer Token</p>
 <p>
 <h4>Admin credentia:</h4> 
