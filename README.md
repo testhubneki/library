@@ -8,7 +8,7 @@
 To install
 1. git clone https://github.com/testhubneki/library.git
 
-2. Edit .env.example and save as .env in .env file add name of your database, username, password
+2. Edit .env.example and save as .env 
 
 3. In .env file add name of your database, username, password
 
