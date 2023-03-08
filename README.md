@@ -25,19 +25,24 @@ To install
 9. Run php artisan serve
 
 
-Use Postman or other tools x-api-key must use in header(api key stored in root config/api.php )
-Admin credentia: 
-email:admin@mail.com
-password:1234567
+<p>Use Postman or other tools x-api-key must use in header(api key stored in root config/api.php )</p>
+<p>In Postman or other tools in Headers  key Accept value application/json and  key Contebt-Type value application/json</p>
+<p>When you logi in use token for authorization in Postman->Authorisation->Type choose Bearer Token</p>
+<p>
+<h4>Admin credentia:</h4> 
+<p>email:admin@mail.com<p>
+<p>password:1234567</p>
 
-For login use POST method routes: localhost:8000/api/login
-For register use POST method routes: localhost:8000/api/register
-For logout use POST method routes: localhost:8000/api/logout
-For author is resource localhost:8000/api/author and author
-For book is resource localhost:8000/api/book
-For seeing books with author method GET, localhost:8000/show_books
-For search by books, author or ritle method GET, localhost:8000/search_book
-Admin can see all this above, register user can oonly access for see all book, author and search, login,register, logout
+<p>For login use POST method routes: localhost:8000/api/login</p>
+<p>For register use POST method routes: localhost:8000/api/register</p>
+<p>For logout use POST method routes: localhost:8000/api/logout</p>
+<p>For author is resource localhost:8000/api/author and author</p>
+<p>For book is resource localhost:8000/api/book</p>
+<p>For seeing books with author method GET, localhost:8000/show_books</p>
+<p>For search by books, author or ritle method GET, localhost:8000/search_book</p>
+<p>Admin can see all this above, register user can oonly access for see all book, author and search, login,register, logout</p>
+
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
