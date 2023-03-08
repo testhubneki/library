@@ -42,6 +42,9 @@ To install
 <p>For search by books, author or ritle method GET, localhost:8000/search_book</p>
 <p>Admin can see all this above, register user can oonly access for see all book, author and search, login,register, logout</p>
 
+<p>Za test odradjeno logovanje zbog passporta, prikaz odredjenog autora, insertovanje, updat-ovanje</p>
+<p>Za pokretanje testa u terminalu u root aplikacije pokrenuti vendor/bin/phpunit</p>
+
 
 
 

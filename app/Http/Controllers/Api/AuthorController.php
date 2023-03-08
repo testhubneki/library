@@ -59,7 +59,6 @@ class AuthorController extends Controller
      */
     public function show(Author $author)
     {
-        $picture = ($author->picture == null) ? $this->picture : $author->picture;
        
         $data = Author::where('active', 1)->where('id', $author->id)->get();
         return response()->json(['author'=>$data], 200);
