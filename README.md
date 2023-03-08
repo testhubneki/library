@@ -24,7 +24,7 @@ To install
 
 9. Run php artisan serve
 
-
+<p>App use passport OAuth2 for authenticating and spatie/laravel-activitylog for users log</p>
 <p>Use Postman or other tools x-api-key must use in header(api key stored in root config/api.php )</p>
 <p>In Postman or other tools in Headers  key Accept value application/json and  key Content-Type value application/json</p>
 <p>When you logi in use token for authorization in Postman->Authorisation->Type choose Bearer Token</p>
@@ -41,7 +41,7 @@ To install
 <p>For seeing books with author method GET, localhost:8000/show_books</p>
 <p>For search by books, author or ritle method GET, localhost:8000/search_book</p>
 <p>Admin can see all this above, register user can oonly access for see all book, author and search, login,register, logout</p>
-<p>App use spatie/laravel-activitylog for users log</p>
+
 
 
 
