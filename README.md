@@ -29,7 +29,7 @@ To install
 <p>In Postman or other tools in Headers  key Accept value application/json and  key Content-Type value application/json</p>
 <p>When you log in use token for authorization in Postman->Authorisation->Type choose Bearer Token</p>
 <p>
-<h4>Admin credentia:</h4> 
+<h4>Admin credentials:</h4> 
 <p>email:admin@mail.com<p>
 <p>password:1234567</p>
 
