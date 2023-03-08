@@ -36,7 +36,7 @@ To install
 <p>For login use POST method routes: localhost:8000/api/login</p>
 <p>For register use POST method routes: localhost:8000/api/register</p>
 <p>For logout use POST method routes: localhost:8000/api/logout</p>
-<p>For author is resource localhost:8000/api/author and author</p>
+<p>For author is resource localhost:8000/api/author and author(if adding picture chose in Postman or other tool to inout id file) </p>
 <p>For book is resource localhost:8000/api/book</p>
 <p>For seeing books with author method GET, localhost:8000/show_books</p>
 <p>For search by books, author or ritle method GET, localhost:8000/search_book</p>
