@@ -45,11 +45,10 @@ class BookController extends Controller
         $request->validated();
         $author_id = $request->author_id;
         $id = $this->bookHelper->checkAuthor($author_id);
-        // $test = $id[0]->id;
-        // return response()->json(['message'=>$id[0]->id], 200);
+    
         if($id->isNotEmpty()){
             $description =($request->description) ? $request->description : null;
-            Book::insert([
+            Book::create([
                 'title'=>$request->title,
                 'number'=>uniqid(),
                 'description'=>$description,
@@ -89,14 +88,16 @@ class BookController extends Controller
         $request->validated();
 
         $book = Book::where('id', $id)->get();
-        $id_author = $this->bookHelper->checkAuthor($id);
+      
+        $number = ($request->number) ? $request->number : $book[0]->number;
+        $id_author = $this->bookHelper->checkAuthor($request->author_id);
         $description =($request->description) ? $request->description : null;
         
         if(!empty($id_author[0]->id)) {
             
-            Book::where('id', $id)->update([
+            Book::where('id', $id)->first()->update([
                 'title' => $request->title,
-                'number' => $request->number,
+                'number' => $number,
                 'description' => $description,
                 'author_id'=>$request->author_id
              ]);
@@ -113,6 +114,7 @@ class BookController extends Controller
     {
         Book::where('active', 1)
         ->where('id', $id)
+        ->first()
         ->update([
             'active' => 0,
         ]);

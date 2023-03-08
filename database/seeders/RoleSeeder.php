@@ -12,7 +12,7 @@ class RoleSeeder extends Seeder
      */
     public function run(): void
     {
-        Role::inser([
+        Role::create([
             'name'=>'Admin',
             'name'=>'User'
 

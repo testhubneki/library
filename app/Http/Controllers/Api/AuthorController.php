@@ -85,6 +85,7 @@ class AuthorController extends Controller
         $image = $this->image->imageSave($request);
         $data = Author::where('active', 1)
         ->where('id', $author->id)
+        ->first()
         ->update([
             'name' => $request->name,
             'surname' =>$request->surname,
@@ -102,6 +103,7 @@ class AuthorController extends Controller
     {
         Author::where('active', 1)
         ->where('id', $author->id)
+        ->first()
         ->update([
             'active' => 0,
         ]);

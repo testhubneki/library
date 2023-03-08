@@ -14,7 +14,8 @@ class Book extends Model
     public function getActivitylogOptions(): LogOptions
     {
         return LogOptions::defaults()
-        ->logOnly(['title', 'description','number','author_id']);
+        ->logOnly(['title', 'author_id']);
     }
+
     protected $fillable = ['title', 'description','number','author_id'];
 }
