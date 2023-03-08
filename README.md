@@ -1,9 +1,8 @@
 <h4>Required:</h4>
-<br/>
-PHP 8*
-Database(You prefere) 
-Composer
-Git
+<p>PHP 8*</p>
+<p>Database(You prefere)</p>
+<p>Composer</p>
+<p>Git</p>
 
 
 To install
