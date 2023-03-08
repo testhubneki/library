@@ -1,3 +1,44 @@
+Required:
+PHP 8*
+Database(You prefere) 
+Composer
+Git
+
+
+To install
+1. git clone https://github.com/testhubneki/library.git
+
+2. Edit .env.example and save as .env in .env file add name of your database, username, password
+
+3. In .env file add name of your database, username, password
+
+4. Run composer install
+
+5. Run php artisan migrate
+
+6. Run php artisan db:seed
+
+7. Run php artisan passport:install
+
+8. Run php artisan key:generate
+
+9. Run php artisan serve
+
+
+Use Postman or other tools x-api-key must use in header(api key stored in root config/api.php )
+Admin credentia: 
+email:admin@mail.com
+password:1234567
+
+For login use POST method routes: localhost:8000/api/login
+For register use POST method routes: localhost:8000/api/register
+For logout use POST method routes: localhost:8000/api/logout
+For author is resource localhost:8000/api/author and author
+For book is resource localhost:8000/api/book
+For seeing books with author method GET, localhost:8000/show_books
+For search by books, author or ritle method GET, localhost:8000/search_book
+Admin can see all this above, register user can oonly access for see all book, author and search, login,register, logout
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
